@@ -117,7 +117,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v2
       - name: Run Linkinator
-        uses: JustinBeckwith/linkinator-action@v1.0.9
+        uses: JustinBeckwith/linkinator-action@v1
         with:
           paths: ./src/data/markdown/**/*.md
           recurse: true
