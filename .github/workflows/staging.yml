@@ -110,8 +110,8 @@ jobs:
         run: sudo pip3 install awscli
       - name: Deploy
         run: npm run deploy
-  linkinator:
-    name: Check broken links
+  broken-link-checker:
+    name: Check markdown links
     runs-on: ubuntu-latest
     steps:
       - name: Checkout project
