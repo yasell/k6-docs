@@ -113,8 +113,6 @@ jobs:
   linkinator:
     name: Check broken links
     runs-on: ubuntu-latest
-    needs:
-      - build-deploy-staging
     steps:
       - name: Checkout project
         uses: actions/checkout@v2
