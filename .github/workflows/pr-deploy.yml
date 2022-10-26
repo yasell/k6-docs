@@ -152,3 +152,14 @@ jobs:
                 `${process.env.GATSBY_DEFAULT_DOC_URL}\n\n` +
                 'It will be deleted automatically in 30 days.',
             })
+
+  broken-link-checker:
+    name: Check markdown links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check
+        uses: ruzickap/action-my-broken-link-checker@v2
+        with:
+          url: https://k6.io/docs
+          pages_path: ./public/
+          debug: true
