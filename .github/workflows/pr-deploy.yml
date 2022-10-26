@@ -161,5 +161,4 @@ jobs:
         uses: ruzickap/action-my-broken-link-checker@v2
         with:
           url: https://k6.io/docs
-          pages_path: ./public/
           debug: true
