@@ -110,3 +110,14 @@ jobs:
         run: sudo pip3 install awscli
       - name: Deploy
         run: npm run deploy
+  linkinator:
+    name: Run the linkchecker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+        uses: actions/checkout@v2
+      - name: Linkinator
+        uses: JustinBeckwith/linkinator-action@v1
+        with:
+          paths: src/data/*.md
+          concurrency: 10
