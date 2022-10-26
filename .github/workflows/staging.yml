@@ -120,4 +120,5 @@ jobs:
         uses: JustinBeckwith/linkinator-action@v1
         with:
           paths: ./src/data/markdown/**/*.md
+          recurse: true
           concurrency: 10
